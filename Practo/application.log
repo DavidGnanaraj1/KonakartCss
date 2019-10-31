@@ -1,0 +1,64 @@
+2019-09-16 12:41:39,090  INFO [main] Log4j:23 - Chrome browser opens
+2019-09-16 12:48:44,311  INFO [main] Log4j:23 - Chrome browser opens
+2019-09-16 12:57:25,514  INFO [main] LogReport:23 - Chrome browser opens
+2019-09-16 12:57:30,930  INFO [main] LogReport:23 - opening website
+2019-09-16 12:57:55,614  INFO [main] LogReport:23 - First Medicine details
+2019-09-16 12:58:44,579  INFO [main] LogReport:23 - Chrome browser opens
+2019-09-16 12:58:50,002  INFO [main] LogReport:23 - opening website
+2019-09-16 12:59:14,758  INFO [main] LogReport:23 - First Medicine details
+2019-09-16 15:40:25,695  INFO [main] LogReport:23 - Chrome browser opens
+2019-09-16 15:40:30,229  INFO [main] LogReport:23 - opening website
+2019-09-16 15:40:51,845  INFO [main] LogReport:23 - First Medicine details
+2019-09-16 15:40:53,352  INFO [main] LogReport:23 - Second Medicine details Verified
+2019-09-16 15:40:53,397  INFO [main] LogReport:23 - Total Prize verified
+2019-09-16 15:45:38,879  INFO [main] LogReport:23 - Chrome browser opens
+2019-09-16 15:45:44,477  INFO [main] LogReport:23 - opening website
+2019-09-16 15:46:06,551  INFO [main] LogReport:23 - First Medicine details
+2019-09-16 15:46:07,721  INFO [main] LogReport:23 - Second Medicine details Verified
+2019-09-16 15:46:07,769  INFO [main] LogReport:23 - Total Prize verified
+2019-10-30 19:06:24,898  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:07:23,404  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:07:52,410  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:08:45,747  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:12:10,779  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:12:59,810  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:14:04,534  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-30 19:14:40,000  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 11:15:55,931  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 12:31:53,432  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 12:38:25,871  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 12:46:13,782  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 12:49:48,181  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 12:54:42,632  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 14:45:38,200  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 14:51:48,481  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 14:54:40,234  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 15:48:49,701  INFO [main] LogReport:23 - Chrome browser opens
+2019-10-31 15:57:28,037  INFO [main] LogReport:23 - IE browser opens
+2019-10-31 16:10:13,051  INFO [main] LogReport:23 - IE browser opens
+2019-10-31 16:12:42,858  INFO [TestNG-tests-1] LogReport:23 - Firefox browser opens
+2019-10-31 16:19:21,852  INFO [TestNG-tests-1] LogReport:23 - Firefox browser opens
+2019-10-31 16:20:04,035  INFO [TestNG-tests-1] LogReport:23 - Firefox browser opens
+2019-10-31 16:22:08,104  INFO [TestNG-tests-3] LogReport:23 - Firefox browser opens
+2019-10-31 16:22:08,400  INFO [TestNG-tests-1] LogReport:23 - Firefox browser opens
+2019-10-31 16:22:10,337  INFO [TestNG-tests-2] LogReport:23 - Firefox browser opens
+2019-10-31 16:28:08,199  INFO [TestNG-tests-1] LogReport:23 - Firefox browser opens
+2019-10-31 16:28:09,713  INFO [TestNG-tests-2] LogReport:23 - Firefox browser opens
+2019-10-31 16:28:09,829  INFO [TestNG-tests-3] LogReport:23 - Firefox browser opens
+2019-10-31 16:30:00,360  INFO [TestNG-tests-3] LogReport:23 - Firefox browser opens
+2019-10-31 16:36:18,680  INFO [TestNG-tests-1] LogReport:23 - IE browser opens
+2019-10-31 16:36:18,758  INFO [TestNG-tests-3] LogReport:23 - IE browser opens
+2019-10-31 16:36:18,761  INFO [TestNG-tests-2] LogReport:23 - IE browser opens
+2019-10-31 16:59:18,092  INFO [TestNG-tests-3] LogReport:23 - IE browser opens
+2019-10-31 16:59:18,092  INFO [TestNG-tests-2] LogReport:23 - IE browser opens
+2019-10-31 16:59:18,135  INFO [TestNG-tests-1] LogReport:23 - IE browser opens
+2019-10-31 18:29:23,565  INFO [TestNG-tests-1] LogReport:23 - IE browser opens
+2019-10-31 18:29:23,567  INFO [TestNG-tests-3] LogReport:23 - IE browser opens
+2019-10-31 18:29:23,566  INFO [TestNG-tests-2] LogReport:23 - IE browser opens
+2019-10-31 18:31:08,492  INFO [TestNG-tests-1] LogReport:23 - IE browser opens
+2019-10-31 18:31:08,506  INFO [TestNG-tests-3] LogReport:23 - IE browser opens
+2019-10-31 18:31:08,520  INFO [TestNG-tests-2] LogReport:23 - IE browser opens
+2019-10-31 18:40:02,746  INFO [TestNG-tests-1] LogReport:23 - IE browser opens
+2019-10-31 18:40:02,780  INFO [TestNG-tests-3] LogReport:23 - IE browser opens
+2019-10-31 18:40:02,780  INFO [TestNG-tests-2] LogReport:23 - IE browser opens
+2019-10-31 18:43:04,012  INFO [TestNG-tests-1] LogReport:23 - IE browser opens
