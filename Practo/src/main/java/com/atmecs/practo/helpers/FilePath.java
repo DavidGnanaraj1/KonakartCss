@@ -14,7 +14,7 @@ public final static String CHROME_FILE    = chrome_Home + "chromedriver.exe";
 public final static String fireFox_Home   = homeDir + "lib" + File.separator;
 public final static String FIREFOX_FILE   = fireFox_Home + "geckodriver.exe";
 
-public final static String IE_Home        = homeDir + "lib" + File.separator;
+public final static String IE_Home        = homeDir + "resources" +  File.separator+"lib2"+File.separator;
 public final static String IE_FILE        = IE_Home + "IEDriverServer.exe";
 
 public final static String config_Home    = homeDir + "resources" + File.separator+"config"+File.separator;

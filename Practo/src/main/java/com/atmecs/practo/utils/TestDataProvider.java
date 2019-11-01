@@ -25,7 +25,7 @@ public class TestDataProvider {
 			for (int rowIndex = 0; rowIndex < rowNum; rowIndex++) {
 				for (int colIndex = 0; colIndex < colNum; colIndex++) {
 
-					details[rowIndex][colIndex] = ExcelFileReader.getData(sheetIndex, rowIndex + 1, colIndex);
+					details[rowIndex][colIndex] = readExcel.getData(sheetIndex, rowIndex + 1, colIndex);
 				}
 			}
 			return details;

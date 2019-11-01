@@ -14,7 +14,7 @@ public class SearchHelpersA2 extends BrowserInvoke{
 	
 	
 public void searchHelpers() throws IOException {
-		WebElement searchbox=driver.findElement(By.cssSelector(PropertiesFileReader.getData("loc.searchbox")));
+		WebElement searchbox=driver.findElement(By.cssSelector(prop.getData("loc.searchbox")));
 		searchbox.click();
 		
 		searchbox.sendKeys("Pond");

@@ -1,0 +1,18 @@
+C:\Users\David.Easterraj\.m2\repository\com\atmecs\Konakart_Automation-archetype\0.0.1-SNAPSHOT
+
+
+
+
+<groupId>com.atmecs</groupId>
+  <artifactId>Konakart_Automation-archetype</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+java -Dwebdriver.gecko.driver="C:\Users\David.Easterraj\Downloads\atmecs-master (2)\atmecs-master\Practo\lib\geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://50.50.50.254:4444/grid/register/
+
+
+java -Dwebdriver.chrome.driver="C:\Users\David.Easterraj\Downloads\atmecs-master (2)\atmecs-master\Practo\lib\chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://50.50.50.254:4444/grid/register/
+
+java -Dwebdriver.ie.driver="C:\Users\David.Easterraj\Downloads\atmecs-master (2)\atmecs-master\Practo\lib\IEDriverServer.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://50.50.50.254:4444/grid/register/
+

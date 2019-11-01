@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
@@ -22,7 +23,7 @@ import com.atmecs.practo.utils.TestDataProvider;
 
 public class PhpTravels extends BrowserInvoke {
 
-	PropertiesFileReader readprop = new PropertiesFileReader();
+	PropertiesFileReader prop = new PropertiesFileReader();
 	// ExcelFileReader readexcel = new ExcelFileReader(FilePath.TESTDATA_FILE);
 	// LogReport log =new LogReport();
 	// Logger log = Logger.getLogger(Login.class);
@@ -77,6 +78,10 @@ public class PhpTravels extends BrowserInvoke {
 			driver.findElement(By.cssSelector(".row.mb-10")).click();
 		}
 
+		
+	}
+	@AfterSuite
+	public void driverClose() {
 		driver.close();
 	}
 }

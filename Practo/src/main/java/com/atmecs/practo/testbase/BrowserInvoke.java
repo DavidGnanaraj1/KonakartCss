@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -18,17 +19,19 @@ import com.atmecs.practo.utils.PropertiesFileReader;
 
 
 public class BrowserInvoke {
-	    public static WebDriver driver;
+	    public  WebDriver driver;
+@SuppressWarnings("deprecation")
 @Parameters("browser")
 	    @BeforeTest
 public  void browserInvoke(String browser) throws IOException {
 		
-	PropertiesFileReader read = new PropertiesFileReader();
-		PropertiesFileReader.loadProperty(FilePath.CONFIG_FILE);
+	PropertiesFileReader prop = new PropertiesFileReader();
+		prop.loadProperty(FilePath.CONFIG_FILE);
 	//	String browser = PropertiesFileReader.getData("browser");
 	    LogReport log = new LogReport();
-		String url =PropertiesFileReader.getData("url");
+		String url =prop.getData("url");
 		System.out.println(browser);
+		
 		switch (browser) {
 		
 		case "chrome":
@@ -45,10 +48,14 @@ public  void browserInvoke(String browser) throws IOException {
 			
 		case "ie":
 			System.setProperty("webdriver.ie.driver", FilePath.IE_FILE);
-			driver = new InternetExplorerDriver();
-			log.info("IE browser opens");
+			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			capabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, url);
+			driver = new InternetExplorerDriver(capabilities);
+		    log.info("IE browser opens");
 			break;
 		}
+		
 		driver.get(url);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

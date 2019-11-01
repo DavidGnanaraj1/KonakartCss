@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Default Suite]" parallel="tests">
-  <test thread-count="1" name="ie(failed)" parallel="tests">
+<suite thread-count="3" name="Failed suite [Default Suite]" parallel="tests">
+  <test thread-count="3" name="ie(failed)" parallel="tests">
     <parameter name="browser" value="ie"/>
     <classes>
       <class name="com.atmecs.practo.testscripts.PhpTravels">
         <methods>
           <include name="browserInvoke"/>
+          <include name="driverClose"/>
           <include name="selectNoOfPersons" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.atmecs.practo.testscripts.PhpTravels -->

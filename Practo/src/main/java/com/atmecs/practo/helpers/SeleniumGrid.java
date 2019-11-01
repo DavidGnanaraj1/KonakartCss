@@ -21,7 +21,7 @@ public class SeleniumGrid {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setBrowserName("firefox");		
 		String huburl ="http://50.50.50.254:2000/wd/hub";
-		driver = new RemoteWebDriver(new URL(huburl), cap);
+		driver = new RemoteWebDriver(new URL(huburl), cap); 
 		driver.get("http://www.atmecs.com");
 	
 		log.info("Application is open");

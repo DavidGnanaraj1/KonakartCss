@@ -11,11 +11,11 @@ public class PropertiesFileReader {
 
 
 	
-			static File file;
-			static FileReader filereader;
-		    static Properties properties;
+			 File file;
+			 FileReader filereader;
+		     Properties properties;
 
-			public static Properties loadProperty(String path) throws IOException {
+			public  Properties loadProperty(String path) throws IOException {
 				properties = new Properties();
 				file = new File(path);
 				filereader = new FileReader(file);
@@ -24,7 +24,7 @@ public class PropertiesFileReader {
 			}
 
 			
-			public static  String getData(String key) throws IOException {
+			public  String getData(String key) throws IOException {
 				String data = properties.getProperty(key);
 				return data;
 			}

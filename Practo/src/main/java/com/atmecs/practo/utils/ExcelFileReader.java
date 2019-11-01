@@ -11,10 +11,10 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelFileReader {
 	
-		static XSSFWorkbook workbook;
-		static XSSFSheet sheet1;
-		static File file;
-		static String path;
+		XSSFWorkbook workbook;
+		 XSSFSheet sheet1;
+		 File file;
+		 String path;
 
 		public ExcelFileReader(String filePath) throws IOException
 		{
@@ -23,34 +23,26 @@ public class ExcelFileReader {
 				
 				workbook = new XSSFWorkbook(fileInput);
 		}
-
-		
-		public static String getData(int index, int rowNum, int cellNum) 
+		public  String getData(int index, int rowNum, int cellNum) 
 		{
 			sheet1 = workbook.getSheetAt(index);
 			String data = sheet1.getRow(rowNum).getCell(cellNum).getStringCellValue();
 
 			return data;
 		}
-
-		
 		public int rowCounting(int sheet)
 		{
 			int rowCount = workbook.getSheetAt(sheet).getLastRowNum();
 			//System.out.println(" Row Count  is: " + rowCount);
 			return rowCount;
 		}
-
-		
 		public int columnCounting(int sheetIndex) 
 		{
 			int colCount = workbook.getSheetAt(sheetIndex).getRow(1).getLastCellNum();
              //System.out.println("Column count is:"+ colCount);
 			return colCount;
 		}
-		
-		
-		public static String getExcelData(int sheet,int rownum,int colnum) {
+		public  String getExcelData(int sheet,int rownum,int colnum) {
 			int i;
 			
 			String[]array=new String[30];
