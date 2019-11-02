@@ -20,14 +20,14 @@ import com.atmecs.practo.utils.PropertiesFileReader;
 
 public class BrowserInvoke {
 	    public  WebDriver driver;
-@SuppressWarnings("deprecation")
-@Parameters("browser")
+//@SuppressWarnings("deprecation")
+//@Parameters("browser")
 	    @BeforeTest
-public  void browserInvoke(String browser) throws IOException {
+public  void browserInvoke() throws IOException {
 		
 	PropertiesFileReader prop = new PropertiesFileReader();
 		prop.loadProperty(FilePath.CONFIG_FILE);
-	//	String browser = PropertiesFileReader.getData("browser");
+		String browser = prop.getData("browser");
 	    LogReport log = new LogReport();
 		String url =prop.getData("url");
 		System.out.println(browser);

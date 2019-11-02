@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9262" started-at="2019-10-30T07:21:59Z" finished-at="2019-10-30T07:22:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9262" started-at="2019-10-30T07:21:59Z" finished-at="2019-10-30T07:22:09Z">
+      <class name="com.atmecs.Konakart_Automation.SearchValidation">
+        <test-method status="PASS" signature="startReports()[pri:0, instance:com.atmecs.Konakart_Automation.SearchValidation@5a8e6209]" name="startReports" is-config="true" duration-ms="16" started-at="2019-10-30T07:21:59Z" finished-at="2019-10-30T07:21:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReports -->
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:com.atmecs.Konakart_Automation.SearchValidation@5a8e6209]" name="initializeBrowser" is-config="true" duration-ms="5010" started-at="2019-10-30T07:21:59Z" finished-at="2019-10-30T07:22:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="searchValidation()[pri:0, instance:com.atmecs.Konakart_Automation.SearchValidation@5a8e6209]" name="searchValidation" duration-ms="3542" started-at="2019-10-30T07:22:05Z" finished-at="2019-10-30T07:22:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchValidation -->
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.atmecs.Konakart_Automation.SearchValidation@5a8e6209]" name="getReport" is-config="true" duration-ms="4" started-at="2019-10-30T07:22:08Z" finished-at="2019-10-30T07:22:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchValidation status=SUCCESS method=SearchValidation.searchValidation()[pri:0, instance:com.atmecs.Konakart_Automation.SearchValidation@5a8e6209] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReport -->
+        <test-method status="PASS" signature="getClose()[pri:0, instance:com.atmecs.Konakart_Automation.SearchValidation@5a8e6209]" name="getClose" is-config="true" duration-ms="664" started-at="2019-10-30T07:22:08Z" finished-at="2019-10-30T07:22:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClose -->
+      </class> <!-- com.atmecs.Konakart_Automation.SearchValidation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

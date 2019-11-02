@@ -8,7 +8,7 @@ public class FilePath {
 
 public final static String homeDir = System.getProperty("user.dir") + File.separator;
 
-public final static String chrome_Home    = homeDir + "lib" + File.separator;
+public final static String chrome_Home    = homeDir + "resources" + File.separator+"lib2"+File.separator;
 public final static String CHROME_FILE    = chrome_Home + "chromedriver.exe";
 
 public final static String fireFox_Home   = homeDir + "lib" + File.separator;

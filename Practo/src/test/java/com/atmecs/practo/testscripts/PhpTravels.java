@@ -1,10 +1,13 @@
 package com.atmecs.practo.testscripts;
 
+import java.awt.List;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +17,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.log4testng.Logger;
 
+import com.atmecs.automations.pageactions.PageActions;
 import com.atmecs.practo.helpers.FilePath;
 import com.atmecs.practo.testbase.BrowserInvoke;
 import com.atmecs.practo.utils.ExcelFileReader;
@@ -29,7 +33,7 @@ public class PhpTravels extends BrowserInvoke {
 	// Logger log = Logger.getLogger(Login.class);
 	int adultno = 10, childno = 15, infantno = 20;
 
-	@Test(dataProvider = "login", dataProviderClass = TestDataProvider.class)
+	//@Test(dataProvider = "login", dataProviderClass = TestDataProvider.class)
 	public void selectNoOfPersons(String username, String password) throws IOException, InterruptedException {
 
 		WebElement adultplusbtn = driver
@@ -80,6 +84,71 @@ public class PhpTravels extends BrowserInvoke {
 
 		
 	}
+	//@Test
+	public void php() throws IOException {
+	   	PageActions pageactions = new PageActions();
+	 	PropertiesFileReader prop = new PropertiesFileReader();
+	 	prop.loadProperty(FilePath.LOCATORS_FILE);
+	   	Alert alrt;
+	   	try {
+	   	alrt=driver.switchTo().alert();
+		alrt.accept();
+	   	}catch(NoAlertPresentException e) {
+	   		System.out.println("No alert is present");
+	   	}
+	   
+	   	pageactions.click(driver,"loc.fromcity");
+		pageactions.sendKeys(driver,"loc.fromcity" ,"Gachibowli, Hyderabad");
+		pageactions.click(driver, "loc.tiocity");
+		pageactions.sendKeys(driver,"loc.tiocity" ,"Pondicherry");
+		pageactions.click(driver,"loc.calendar");
+		pageactions.click(driver, "loc.date");
+		pageactions.click(driver, "loc.returncale");
+		pageactions.click(driver, "loc.retdate");
+		//pageactions.click(driver,"loc.searchbtn");
+		boolean element = driver.findElement(By.cssSelector(".clearfix.search-wrap button")).isDisplayed();
+		System.out.println(element);
+		driver.findElement(By.cssSelector(".fl.search-box.date-box.gtm-returnCalendar+button")).click();
+		
+		driver.findElement(By.cssSelector(".clearfix.search-wrap button")).click();
+				
+	}
+	
+	@Test
+	public void atmecs() throws IOException {
+		PageActions pageactions = new PageActions();
+	 	PropertiesFileReader prop = new PropertiesFileReader();
+	 	prop.loadProperty(FilePath.LOCATORS_FILE);
+	 	//List<WebElement> homelist=driver.findElements(By.xpath("http://www.atmecs.com/"));
+	    String[] listsup= new String[5];
+		java.util.List<WebElement> homelist =driver.findElements(By.xpath(prop.getData("loc.home")));
+		int nos; 
+        nos=homelist.size();
+	 
+        String exptitle="Home | Atmecs, Inc. | Digital Solutions & Product Engineering Services";
+        String actualtitle = driver.getTitle();
+        Assert.assertEquals(actualtitle, exptitle);
+	 	
+        for(int i=0;i<=nos;i++) {
+	 		String textfirst1=".menu-collapser+ul li:nth-child(";
+		 	String textsec1  =Integer.toString(i);
+		 	String textthird1 =")";
+		 	String fulltext=textfirst1+textsec1+textthird1;
+		 	java.util.List<WebElement> homelist1=driver.findElements(By.cssSelector("fulltext"));
+		 
+		 	  java.util.List <String > values = new ArrayList<>();
+
+		 	
+		 	 for (WebElement e : homelist) {
+		 	    values.add(e.getText());
+         	 	 }
+	 	
+	 	}
+	 	
+	 	
+	 	}
+	 	
+	 	
 	@AfterSuite
 	public void driverClose() {
 		driver.close();
